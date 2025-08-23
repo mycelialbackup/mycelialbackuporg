@@ -1,0 +1,14 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const pageTitle = "Mycelial Backup - News"
+const allNews = Object.values(import.meta.glob('./news/*.md', { eager: true }))
+---
+
+<BaseLayout>
+    <p>Someday this will be displayed in a manner that is pretty lol. Until then, here's the site news:</p>
+    <ul>
+        <!-- I suppose long term this should be a component... -->
+        {allNews.map((post: any) => <li><a href={post.url}>post.frontmatter.title</a></li>)}
+    </ul>
+</BaseLayout>
