@@ -1,0 +1,36 @@
+media:
+  input: src/media
+  output: media
+content:
+  - name: news
+    label: News
+    path: src/pages/news
+    type: collection
+    view:
+      fields: [heroImage, title, pubDate]
+    fields:
+      - name: layout
+        label: Layout
+        type: string
+        required: true
+        default: ../../layouts/NewsLayout.astro
+    
+      - name: title
+        label: Title
+        type: string
+        required: true
+
+      - name: pubDate
+        label: Publication Date
+        type: date
+        required: true
+        options:
+          format: yyyy-MM-dd
+
+      - name: heroImage
+        label: Hero Image
+        type: image
+
+      - name: body
+        label: Body
+        type: rich-text
