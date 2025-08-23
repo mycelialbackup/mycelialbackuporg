@@ -31,6 +31,10 @@ content:
         label: Hero Image
         type: image
 
+      - name: heroAlt
+        label: Hero Image Alt
+        type: text
+
       - name: body
         label: Body
         type: rich-text
