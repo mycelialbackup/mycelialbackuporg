@@ -4,6 +4,6 @@ const { frontmatter } = Astro.props;
 ---
 <BaseLayout pageTitle={frontmatter.title}>
     <p>{frontmatter.pubDate.toString().slice(0,10)}</p>
-    <img src={frontmatter.heroImage} alt={frontmatter.heroAlt}>
+    <img src={frontmatter.heroImage.url} alt={frontmatter.heroAlt}>
     <slot />
 </BaseLayout>
