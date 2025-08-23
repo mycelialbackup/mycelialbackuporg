@@ -33,7 +33,7 @@ content:
 
       - name: heroAlt
         label: Hero Image Alt
-        type: text
+        type: string
 
       - name: body
         label: Body
