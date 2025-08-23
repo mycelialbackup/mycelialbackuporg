@@ -9,6 +9,12 @@ content:
     view:
       fields: [heroImage, title, pubDate]
     fields:
+      - name: layout
+        label: Layout
+        type: string
+        required: true
+        default: ../../layouts/NewsLayout.astro
+    
       - name: title
         label: Title
         type: string
