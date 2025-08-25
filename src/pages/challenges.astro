@@ -1,0 +1,70 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const pageTitle = "Mycelial Backup - Challenges"
+---
+
+<BaseLayout>
+    <h2>We don't have every answer</h2>
+    <p>
+        Mycelial Backup's overarching goal is quite broad; to encourage backup infrastructure within the mycology space.
+        Some things are easier to preserve than others; this website is mostly text information with a few small files (images and the likes) thrown in.
+        For that reason, the maintenance costs and barrier to entry are quite low.
+        Conversely, many mycology communities make use of video hosting, group discussion spaces, and complex databases.
+        While not impossible to add to the Mycelial Backup network, currently there's some issues:
+    </p>
+    <ul>
+        <li>
+            <h3>Forums / Group Spaces</h3>
+            <p>
+                Right now Mycelial Backup's main focus is <i>Static Websites</i>, as these are the easiest and cheapest to deploy and offer the most flexibility
+                to stay in charge of your data. For communal features like message boards, <em>Dynamic Websites</em> are required. The difference in short being
+                that a static website is a collection of files on a server that don't run code, where a dynamic website does run code on the server. 
+                This means that as the cost of hosting increases proportionally to the userbase, often dramatically. Additionally,
+                group spaces have to handle user data (logins at the minimum assuming they're not completely anonymized), and need some form of moderation in place.
+                Again, nothing about this is impossible. There's just a lot of work needed to find solutions to some of these challenges,
+                and this is not currently Mycelial Backup's main focus. <br>
+                Potentially a better starting point is exploring existing alternatives to the main social media platforms. This is not an endorsement,
+                but I have heard promising things about Bluesky and the surrounding technology. Looking into emerging decentralized social media platforms
+                may provide more immediate value than attempting to build this infrastructure ourselves.
+            </p>
+        </li>
+        <li>
+            <h3>Video Hosting</h3>
+            <p>
+                The biggest problem with video hosting is that it requires a lot of storage space and bandwidth. To use a technical term,
+                a video hosting website needs an absolute fuckton of resources, more than I imagine most people can afford. This is in addition to many
+                of the same issues outlined above regarding forums, assuming that you want videos to be uploaded by users with accounts. <br>
+                My current thought/recommendation: big players in the mycology space with access to funds and developers might think about 
+                mass video hosting infrastcuture. Everyone else may want to either.
+            </p>
+            <ol>
+                <li>Look at existing video hosting services; there has never been a <i>great</i> alternative to YouTube, but that doesn't mean they don't exist.</li>
+                <li>
+                    Only host small numbers of videos, or even just provide download links. This still could get expensive,
+                    but if you only have a few gigabytes of video files you want to share it may be viable. Alternatively,
+                </li>
+                <li>
+                    Avoid using video files to share information. Videos are awesome, don't get me wrong. But for ease of sharing,
+                    large files get docked a lot of points. If your information can be provided in written form (with images if needed),
+                    or as an audio file, it will be significantly easier to preserve and disseminate.
+                </li>
+            </ol>
+        </li>
+        <li>
+            <h3>Complex Databases like iNaturalist / MushroomObserver</h3>
+            <p>
+                See above problems regarding user accounts / content, hosting large files, etc. I think in some sense these tools are 
+                at the least risk of censorship, and the fact that we have <i>both</i> iNaturalist and MushroomObserver available to us
+                is itself an incredible start. It's certainly not impossible to build alternatives to these websites, but I think a better goal
+                could be to modernize / strengthen MushroomObserver. As somebody who very much appreciates MushroomObserver, and likely lacks the skillset
+                to create something of that scale, I hope the following is not taken with offense: MushroomObserver can be a bit rough. 
+                There can be very long load times, sometimes importing observations from iNat goes awry, etc. These are all perfectly reasonable problems
+                for a site like MushroomObserver to have; I think the team behind it has overall done a wonderful job. Mycelial Backup's recommendation 
+                is that those with the skillset and/or resources to contribute to MushroomObserver should do so. <br>
+                Additionally, mycologists currently constrained to iNaturalist may want to post their observations on both platforms, and keep backups of
+                any obsevations you don't want to lost locally.
+            </p>
+        </li>
+    </ul>
+</BaseLayout>
