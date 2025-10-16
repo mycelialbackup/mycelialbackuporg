@@ -13,7 +13,7 @@ content:
           label: Layout
           type: string
           required: true
-          default: ../../layouts/NewsLayout.astro
+          default: ../../../layouts/GuideLayout.astro
       
         - name: title
           label: Title
